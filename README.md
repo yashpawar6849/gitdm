@@ -88,7 +88,7 @@ Regenerating all data with `./rerun_data.sh` means:
 - Data for `kubernetes/kubernetes` repository (all time) with 3 mappings of Unknown developers: no mapping (list them with their email & name), map them to their email domain (`user@gmail.com` --> `'Gmail *'`), map all of them to '(Unknown)'. This is done via running: (`./all.sh`, `./all_no_map.sh`, `./all_with_map.sh`). Output goes to `kubernetes/all_time/` directory
 - Data for `kubernetes/kubernetes` repository divided into releases v1.0.0, v1.1.0, ..., v1.7.0 (with 3 types of mappings described above). This is done via (`./rels.sh`, `./rels_strict.sh`, `./rels_no_map.sh`). Output goes to `kubernetes/v1.X.0-v1.Y.0/` directory: X=0,1,2,3,4,5,6 Y=1,2,3,4,5,6,7)
 
-After performing those two steps, `cncfdm.py` output needs to be analysed. It is done by calling: `./analysis_all.sh` (analyses all-time results) and then `./analysis_rels.sh` (for pre-release data)
+After performing those two steps, `cncfdm.py` output needs to be analysed. It is done by calling: `./analysis_all.sh` (analysis all-time results) and then `./analysis_rels.sh` (for pre-release data)
 
 Data for all 68 repos (currently) which makes the entire Kubernetes project with `./kubernetes_repos.sh` script.
 
